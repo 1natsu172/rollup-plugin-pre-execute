@@ -1,0 +1,1 @@
+export { isStringArray } from './isStringArray'
