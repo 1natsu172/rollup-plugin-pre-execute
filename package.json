@@ -55,6 +55,7 @@
     ]
   },
   "devDependencies": {
+    "@types/execa": "^0.9.0",
     "@types/jest": "^23.3.10",
     "@types/node": "^10.12.18",
     "husky": "^1.2.0",
@@ -72,5 +73,9 @@
   },
   "keywords": [
     "rollup-plugin"
-  ]
+  ],
+  "dependencies": {
+    "execa": "^1.0.0",
+    "p-iteration": "^1.1.7"
+  }
 }
