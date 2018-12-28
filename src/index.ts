@@ -2,7 +2,7 @@ import { Plugin } from 'rollup'
 import execa from 'execa'
 import { forEach, forEachSeries } from 'p-iteration'
 
-import { isStringArray } from './libs/validater'
+import { isStringArray } from './libs/validator'
 
 type Options = typeof defaultOptions
 const defaultOptions = {
