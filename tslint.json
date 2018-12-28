@@ -8,6 +8,7 @@
         "semi": false
       }
     ],
-    "import-name": false
+    "import-name": false,
+    "no-parameter-reassignment": false
   }
 }
