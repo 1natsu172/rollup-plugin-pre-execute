@@ -30,7 +30,14 @@ const execute = (
       if (!Array.isArray(commands) || !isStringArray(commands)) {
         throw new Error('Commands should be a string or stringArray(string[])')
       }
-      if (/\0/.test(id)) return null // ignore IDs with null character, these belong to other plugins(e.g. rollup-plugin-babel)
+      /**
+       * @description
+       * Guard:
+       * ignore IDs with null character, these belong to other plugins(e.g. rollup-plugin-babel)
+       * @see
+       * https://rollupjs.org/guide/en#conventions
+       */
+      if (/\0/.test(id)) return null
 
       console.log('Executing command(s)')
 
